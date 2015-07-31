@@ -22,6 +22,10 @@ class UsersController < ApplicationController
     @users = User.all
   end
 
+  def pricing
+
+  end
+
   def export_csv
     @users = User.all
     user_csv = CSV.generate do |csv|
